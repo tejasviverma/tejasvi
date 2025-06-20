@@ -100,11 +100,11 @@ function a11yProps(index) {
   };
 }
 
-const sideProjects = [
+/*const sideProjects = [
   { id: 1, title: "Weather App", description: "A simple weather app using OpenWeatherMap API." },
   { id: 2, title: "Markdown Editor", description: "An online markdown previewer with live rendering." },
   { id: 3, title: "To-Do List", description: "A task manager built with React and LocalStorage." },
-];
+];*/
 
 
 const techStacks = [
@@ -118,6 +118,8 @@ const techStacks = [
   { icon: "bootstrap.svg", language: "Bootstrap" },
   { icon: "firebase.svg", language: "Firebase" },
   { icon: "vercel.svg", language: "Vercel" },
+  { icon:"xcode.png", language:"xcode"},
+  { icon:"swift.svg", language:"swift" }
 ];
 
 export default function FullWidthTabs() {
@@ -257,11 +259,11 @@ export default function FullWidthTabs() {
               label="Tech Stack"
               {...a11yProps(2)}
             />
-            <Tab
+            {/*<Tab
               icon={<Boxes className="mb-2 w-5 h-5 transition-all duration-300" />}
               label="Side Projects"
              {...a11yProps(3)}
-            />
+            />*/}
 
           </Tabs>
         </AppBar>
@@ -334,7 +336,7 @@ export default function FullWidthTabs() {
               </div>
             </div>
           </TabPanel>
-          <TabPanel value={value} index={3} dir={theme.direction}>
+          {/*<TabPanel value={value} index={3} dir={theme.direction}>
              <div className="container mx-auto flex justify-center items-center overflow-hidden pb-[5%]">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                 {sideProjects.map((project, index) => (
@@ -350,7 +352,7 @@ export default function FullWidthTabs() {
             ))}
             </div>
             </div>
-          </TabPanel>
+          </TabPanel>*/}
         </SwipeableViews>
       </Box>
     </div>
